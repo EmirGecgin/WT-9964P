@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Start Bootstrap</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow navbar-header">
+        <div class="container py-3">
+            <a class="navbar-brand fw-bolder" href="#">Start Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto px-4 fw-semibold">
+                    <li class="nav-item px-3">
+                        <a class="nav-link" aria-current="page" href="#feature-section">Features</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#get-app-section">Download</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <button type="button" class="btn btn-primary rounded-5 " data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-chat-text-fill"></i></i> Send Feedback</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Modal -->
+    <div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header py-4">
+                    <h1 class="modal-title fs-5 text-white fw-bold" id="exampleModalLabel">Send Feedback</h1>
+                    <button type="button" class=" btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="Name">
+                        <label for="Name">Full Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="tel" class="form-control" id="email-id">
+                        <label for="email-id">Email address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="tel" class="form-control" id="phone-number">
+                        <label for="phone-number">Phone number</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="Text-area" style="height: 100px;"></textarea>
+                        <label for="Text-area" class="form-label">Example textarea</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary col-12 rounded-5 fs-5" type="submit">Submit form</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal End -->
+    <!-- Header Start -->
+    <header class="masthead">
+        <div class="container px-5 my-5 py-5">
+            <div class="row align-items-center gx-5 justify-content-center ">
+                <div class="writing-part col-lg-6 col-md-12  my-5 py-3">
+                    <div class="text-lg-start text-center">
+                        <h1 class="display-1 mb-3 mt-lg-5 pt-3 pt-lg-5">Showcase your app beautifully.</h1>
+                        <p class="mb-5 fs-5 text-muted">Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!</p>
+                    </div>
+                    <div class="writing-logo-part text-center">
+                        <div class="row justify-content-lg-start justify-content-center d-flex  mb-3 align-items-center ">
+                            <div class="col-lg-4 col-xl-3 me-xxl-2 me-xl-3 col-md-12 me-lg-2 mb-3 col-12 ">
+                                <a href="#!">
+                                    <img class="app-badge-gp " style="height: 3rem;" src="https://demo.onlyjs.com/exercises/bootstrap-mobile-app/assets/img/google-play-badge.svg" alt="googlePlay-logo">
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 ms-xxl-3 ms-xl-4 col-md-12 ms-lg-3 mb-3 col-12">
+                                <a href="#!">
+                                    <img class="app-badge-as" style="height: 3rem;" src="https://demo.onlyjs.com/exercises/bootstrap-mobile-app/assets/img/app-store-badge.svg" alt="appStore-logo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="picture-part col-lg-6 col-md-12  d-flex  justify-content-center my-3 mt-lg-5">
+                    <div class="circle-bg mt-5">
+                        <img src="https://demo.onlyjs.com/exercises/bootstrap-mobile-app/assets/img/phone-screen.png" style="height: 500px;" class="cell-phone" alt="cell-phone">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Quote/testimonial aside Start-->
+    <aside class="text-center testimonial-part">
+        <div class="container ">
+            <div class="row d-flex justify-content-center pt-4 pb-4 ">
+                <div class="col-xl-8 px-5 mx-5">
+                    <h2 class="mt-5 pt-2 text-white fw-semibold fs-1">"An intuitive solution to a common problem that we all face, wrapped up in a single app!"</h2>
+                    <img src="https://demo.onlyjs.com/exercises/bootstrap-mobile-app/assets/img/tnw-logo.svg" class="my-4" height="48px" alt="testimonial-logo">
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- Quote/testimonial aside End-->
+    <!-- App Features Section Start -->
+    <section class="app-section" id="feature-section">
+        <div class="container px-5">
+            <div class="row mt-1 gx-5 mb-3 d-flex justify-content-start align-items-center ">
+                <div class="col-xl-5 col-12 text-center d-flex justify-content-xl-start justify-content-center mb-5 pb-5 order-lg-1 order-2">
+                    <div class="circle-bg-app ">
+                        <img src="https://demo.onlyjs.com/exercises/bootstrap-mobile-app/assets/img/phone-screen.png" style="height: 500px;" class="cell-phone-app" alt="cell-phone">
+                    </div>
+                </div>
+                <div class="col-xl-7 col-12 text-center order-lg-2 order-1">
+                    <div class="row row-cols-md-2 row-cols-1  mt-5">
+                        <div class="col text-center">
+                            <i class="bi bi-phone gradient-color "></i>
+                            <h3 class="mb-2">Device Mockups</h3>
+                            <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                        </div>
+                        <div class="col">
+                            <i class="bi bi-camera gradient-color"></i>
+                            <h3 class="mb-2">Device Mockups</h3>
+                            <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                        </div>
+                        <div class="col">
+                            <i class="bi bi-gift gradient-color"></i>
+                            <h3 class="mb-2">Device Mockups</h3>
+                            <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                        </div>
+                        <div class="col">
+                            <i class="bi bi-patch-check gradient-color"></i>
+                            <h3 class="mb-2">Device Mockups</h3>
+                            <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- App Features Section Start -->
+    <!-- Basic Features Section Start-->
+    <section class="bg-light mt-5">
+        <div class="container px-5">
+            <div class="row gx-5 d-flex align-items-center justify-content-center py-2">
+                <div class="col-lg-6 col-12 features-writing mt-5">
+                    <h2 class="mb-4 display-4">Enter a new age of web design</h2>
+                    <p class="lead text-muted  fw-normal">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
+                </div>
+                <div class="col-lg-6 col-8 mt-5 mb-5">
+                    <img src="https://images.unsplash.com/photo-1620207418302-439b387441b0?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY4MTg1MDA0OA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=900"
+                        class="img-fluid rounded-circle" alt="features-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Basic Features Section End-->
+    <!-- Action Section Start-->
+    <section class="action-section ">
+        <div class="aciton-section-writing">
+            <div class="container writing-action text-white pt-5 mt-5 ">
+                <div class="arrange">
+                    <h2 class="fw-light display-1 lh-1 mb-4 mt-5 pt-5 ms-5">Stop waiting.<br> Start building.</h2>
+                    <button class="download-btn btn btn-outline-light py-3 rounded-5 ms-5">Download for free</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Action Section End-->
+    <!-- Get App Section Start -->
+    <section class="get-app-part" id="get-app-section">
+        <div class="container text-center pt-3">
+            <h2 class="pt-5 pb-4 text-white">Get the app now!</h2>
+            <div class="d-flex flex-column flex-lg-row justify-content-center pb-5 ">
+                <a href="#!" class="px-2 pb-2">
+                    <img src="https://demo.onlyjs.com/exercises/bootstrap-mobile-app/assets/img/google-play-badge.svg" style="height: 3rem;" alt="gp-logo">
+                </a>
+                <a href="#!" class="px-2 pb-2">
+                    <img src="https://demo.onlyjs.com/exercises/bootstrap-mobile-app/assets/img/app-store-badge.svg" style="height: 3rem;" alt="as-logo">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Get App Section End -->
+    <!-- Footer Start -->
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="small text-white text-center pt-5 pb-3">
+                © Emir Geçgin 2023. All Rights Reserved.
+            </div>
+            <div class="d-flex flex-row justify-content-center align-items-center pb-5">
+                <a class="footer-elements mx-1" href="#!">Privacy</a>
+                <span class="mx-1 text-white">·</span>
+                <a class="footer-elements mx-1" href="#!">Terms</a>
+                <span class="mx-1 text-white">·</span>
+                <a class="footer-elements mx-1" href="#!">FAQ</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</body>
+
+</html>
