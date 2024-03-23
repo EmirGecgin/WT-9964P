@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .circle-bg {
     width: 400px;
     height: 400px;
@@ -47,14 +53,53 @@
 }
 
 .circle-bg-app {
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     background: linear-gradient(45deg, rgba(255, 0, 223, 1) 0%, rgba(210, 0, 255, 1) 0%, rgba(119, 0, 209, 1) 50%, rgba(54, 5, 91, 1) 100%);
     position: relative;
     border-radius: 50%;
     margin-top: 150px !important;
+    @media (max-width: 1200px) {
+        width: 350px;
+        height: 350px;
+    }
     @media (max-width: 500px) {
         width: 0px;
+    }
+}
+
+.gradient-color-x-app-features {
+    font-size: 30px;
+    background: -webkit-linear-gradient(rgba(210, 0, 255, 1), rgba(54, 5, 91, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: -20%;
+    right: -35%;
+    transform: rotate(-10deg);
+    @media (max-width: 1200px) {
+        top: 0%;
+        right: 0%;
+    }
+    @media (max-width: 500px) {
+        width: 0px;
+    }
+}
+
+.gradient-color-circle-app-features {
+    font-size: 23px;
+    background: -webkit-linear-gradient(rgba(210, 0, 255, 1), rgba(54, 5, 91, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    bottom: -20%;
+    left: 25%;
+    @media (max-width: 1200px) {
+        bottom: 0%;
+        left: 0%;
+    }
+    @media (max-width: 500px) {
+        display: none;
     }
 }
 
@@ -63,6 +108,33 @@
     background: -webkit-linear-gradient(rgba(210, 0, 255, 1), rgba(54, 5, 91, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.gradient-color-x {
+    font-size: 30px;
+    background: -webkit-linear-gradient(rgba(210, 0, 255, 1), rgba(54, 5, 91, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    bottom: 5%;
+    left: -5%;
+    transform: rotate(-10deg);
+    @media (max-width: 500px) {
+        width: 0;
+    }
+}
+
+.gradient-color-circle {
+    font-size: 23px;
+    background: -webkit-linear-gradient(rgba(210, 0, 255, 1), rgba(54, 5, 91, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 5%;
+    right: -5%;
+    @media (max-width: 500px) {
+        display: none;
+    }
 }
 
 .action-section {
